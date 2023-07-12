@@ -15,6 +15,7 @@ public class RedisJsonHello {
             TmpUser tmpUser = client.jsonGet("tmp-user-1", TmpUser.class);
             System.out.println(tmpUser);
         }catch (Exception e){
+
             System.out.println(e.getMessage());
         }
     }
@@ -24,6 +25,18 @@ public class RedisJsonHello {
 @AllArgsConstructor
 @NoArgsConstructor
 class TmpUser implements Serializable {
+    /**
+     * 用户名
+     */
+    String username;
+    String email;
+    Integer age;
+}
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+class TmpUser2 implements Serializable {
     /**
      * 用户名
      */
