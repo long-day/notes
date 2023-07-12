@@ -24,6 +24,9 @@ public class RedisJsonHello {
 @AllArgsConstructor
 @NoArgsConstructor
 class TmpUser implements Serializable {
+    /**
+     * 用户名
+     */
     String username;
     String email;
     Integer age;
