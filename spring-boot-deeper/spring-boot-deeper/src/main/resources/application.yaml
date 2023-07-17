@@ -1,1 +1,5 @@
-
+server:
+  port: 10086
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%-5level] --- [%thread] %cyan(%-40.40(%logger{40})) : %msg%n"
