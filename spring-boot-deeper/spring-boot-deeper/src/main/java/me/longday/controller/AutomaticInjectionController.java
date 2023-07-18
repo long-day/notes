@@ -1,6 +1,8 @@
 package me.longday.controller;
 
 import lombok.AllArgsConstructor;
+import lombok.val;
+import me.longday.common.UserInfo;
 import me.longday.service.AutomaticInjection;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,8 @@ public class AutomaticInjectionController {
 
     @GetMapping("/sayHello")
     public String sayHello(){
+        UserInfo info = new UserInfo("美杜莎", "123@qq.com", 19);
+        info.say(1);
         return automaticInjection.syaHello();
     }
 

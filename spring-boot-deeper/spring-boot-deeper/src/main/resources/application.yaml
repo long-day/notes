@@ -3,3 +3,6 @@ server:
 logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%-5level] --- [%thread] %cyan(%-40.40(%logger{40})) : %msg%n"
+spring:
+  banner:
+    location: banner.txt
